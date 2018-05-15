@@ -26,12 +26,13 @@ gulp.task('server', function () {
 });
 
 gulp.task('reload', function () {
-    gulp.src('html/*.html').pipe(connect.reload());
-    gulp.src('html_dist/*.html').pipe(connect.reload());
+    gulp.src('./*.html').pipe(connect.reload());
+    gulp.src('about/*.html').pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
-    gulp.watch('html/*.html', ['fileinclude', 'reload']);
+    gulp.watch('./*.html', ['fileinclude', 'reload']);
+    gulp.watch('about/*.html', ['fileinclude', 'reload']);
     gulp.watch('css/*.{css,less,scss}', ['sassTocss', 'reload']);
     //gulp.watch('css/main/*.{scss}', ['sassTocss']);
 
