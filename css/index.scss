@@ -1,0 +1,518 @@
+a, body, html, dd, div, dl, dt, form, h1, h2, h3, h4, input, li, ol, p, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: 0 none;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input, textarea, select, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+img {
+  border: none; /*display: block*/
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "SimHei", "SimSun", Arial, sans-serif;
+  //background: #F2F2F2;
+  font-size: 16px;letter-spacing: 1px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+$blue: #0c42a5;
+
+//主页
+.header-ctn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 72px;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.header {
+
+  height: 72px;
+  padding: 0 20px 0 60px;
+  width: 1120px;
+  .logo {
+    padding-top: 16px;
+    width: 56px;
+  }
+  .name{
+    padding: 35px 0 0 10px;
+  }
+  .nav {
+    padding-top: 10px;
+    a {
+      line-height: 52px;
+      padding: 0 15px;
+      display: inline-block;
+      font-size: 18px;
+    }
+    a.active {
+      border-bottom: 2px solid $blue;
+      color: $blue;
+    }
+  }
+
+}
+
+//banner
+.banner {
+  padding-top: 73px;
+  .swiper-container {
+    width: 1200px;
+    height: 600px;
+  }
+  .swiper-slide {
+    width: 1200px;
+    height: 600px;
+  }
+  .slider-content {
+    height: 190px;
+    width: 415px;
+    margin: 128px 0 0 60px;
+    padding: 80px 0 0 45px;
+    background: rgba(39, 56, 90, 0.5);
+    background: rgba(39, 40, 90, 0.5);
+
+    color: #fff;
+    font-size: 42px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    p {
+      padding-top: 5px;
+    }
+    .line {
+      display: block;
+      width: 36px;
+      border-top: 3px solid $blue;
+      margin: 20px 0 20px;
+    }
+  }
+}
+
+//.swiper-pagination-bullet-active {
+//  opacity: 1;
+//  background: $blue;
+//}
+
+//打造
+.outline {
+  height: 378px;
+  .box {
+    width: 600px;
+    height: 100%;
+    float: left;
+  }
+  .left-box {
+    background: #f1f1f1;
+    padding: 30px 60px 28px 45px;
+    width: 495px;
+    height: 320px;
+    position: relative;
+    p {
+      color: #a89d9d;
+      padding-top: 10px;
+      //text-indent: 2em;
+    }
+    .line {
+      display: block;
+      width: 66px;
+      border-top: 3px solid $blue;
+      margin: 20px 0 20px;
+    }
+    .more {
+      border: 1px solid $blue;
+      width: 100px;
+      display: block;
+      line-height: 30px;
+      text-align: center;
+      color: $blue;
+      position: absolute;
+      bottom: 36px;
+      left: 45px;
+    }
+  }
+  .right-box {
+    position: relative;
+    color: #fff;
+    .bg-box, ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+    .bg-box {
+      background-color: rgba(12, 66, 165, 0.6);
+      width: 100%;
+      height: 100%;
+    }
+    ul {
+      width: 550px;
+      z-index: 9;
+      padding: 30px 0;
+      line-height: 45px;
+      h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        font-weight: 500;
+      }
+      li {
+        overflow: hidden;
+        margin-top: 10px;
+      }
+    }
+    .iconfont {
+      //border: 1px solid #fff;
+      //border-radius: 50%;
+      font-size: 40px;
+      //width: 65px;
+      //line-height: 65px;
+      margin: 0 30px 0 55px;
+      text-align: center;
+    }
+  }
+
+}
+
+//板块标题
+.block-title {
+  //color: $blue;
+  padding: 0 0 20px;
+}
+
+//经营范围
+.business-scope {
+  text-align: center;
+  overflow: hidden;
+  padding: 66px 0;
+  .img-box {
+    width: 1230px;
+    padding-top: 25px;
+    li {
+      float: left;
+      margin-right: 26px;
+      position: relative;
+      span{
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-color: rgba(81, 92, 111, 0.7);
+        color: #fff;
+        padding: 5px 15px;
+      }
+      p{
+        padding: 10px 0 0;
+      }
+    }
+    img {
+      display: block;
+      width: 280px;
+      height: 200px;
+    }
+  }
+}
+
+//部分合作客户
+.customer {
+  text-align: center;
+  overflow: hidden;
+  .content-box {
+    //width: 1230px;
+    margin-top: 25px;
+    background: #f8fbfd;
+    padding: 10px 0 40px 0;
+    li {
+      margin-top: 30px;
+      float: left;
+      margin-left: 35px;
+      background: #fff;
+      width: 256px;
+      height: 200px;
+    }
+    .logo-box{
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+
+    }
+    img {
+      max-width: 120px;
+      //height: 200px;
+      vertical-align: middle;
+    }
+  }
+}
+
+//安全 专业
+.specialty-ctn {
+  background: #1257b2;
+}
+
+.specialty {
+  margin-top: 45px;
+  color: #fff;
+  height: 130px;
+  background: url("../images/sy_zs.jpg") center;
+  //background-size: 1200px 200px;
+  position: relative;
+  padding: 40px 0 0 50px;
+  width: 1150px;
+
+  h2 {
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .txt {
+    font-size: 14px;
+  }
+  .en{
+    font-size: 12px;
+  }
+  .profile {
+    position: absolute;
+    top: 40px;
+    right: 112px;
+    border: 1px solid #fff;
+    padding: 18px;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+}
+
+//footer
+.footer-ctn {
+  background: #1f2229;
+  color: #9ba4aa;
+  .footer {
+    height: 190px;
+    padding-top: 50px;
+  }
+  .link-box {
+    padding-left: 45px;
+    width: 680px;
+  }
+  .link {
+    a {
+      color: #9ba4aa;
+      padding-right: 20px;
+      -webkit-transition: 0.8s;
+      -moz-transition: 0.8s;
+      -ms-transition: 0.8s;
+      -o-transition: 0.8s;
+      transition: 0.8s;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+  }
+  .copyright {
+    padding-top: 125px;
+    font-size: 14px;
+    color: #6f6b5d;
+  }
+  .connect {
+    p {
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+  h3 {
+    padding-bottom: 10px;
+    font-weight: normal;
+  }
+}
+
+///////////////关于我们/////////////////
+//优势
+.advantage {
+  margin-top: 73px;
+  background: #f7f7f7;
+  .content-box {
+    width: 840px;
+    height: 784px;
+
+  }
+  .point-box {
+    background: #044daf;
+    width: 730px;
+    height: 176px;
+    color: #fff;
+    padding: 60px 60px 0 50px;
+    p {
+      padding-top: 20px;
+      line-height: 1.8;
+    }
+  }
+  .list {
+    //padding-top: 10px;
+    li {
+      float: left;
+      color: #2e2d3c;
+      position: relative;
+      height: 206px;
+      width: 314px;
+      overflow: hidden;
+      padding: 30px 30px 0 45px;
+      .iconfont {
+        position: relative;
+        top: 28px;
+        left: 0;
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      color: #545555;
+      text-indent: 52px;
+      padding-bottom: 15px;
+    }
+    p {
+      color: #9a9c95;
+      //line-height: 2;
+    }
+  }
+  .img-box {
+    width: 360px;
+    background: url("../images/bg-car.jpg") center;
+    height: 784px;
+  }
+}
+//业绩
+.performance{
+  text-align: center;
+  padding: 40px 0;
+  .item{
+    float: left;
+    width: 250px;
+    padding: 25px;
+  }
+  h2{
+    font-size: 32px;
+    color: #252922;
+    padding: 10px 0 20px;
+  }
+  h3{
+    font-size: 16px;
+    color: #3b404f;
+    padding-bottom: 10px;
+  }
+  p{
+    color: #a0a2a9;
+    line-height: 1.8;
+  }
+  .iconfont{
+    font-size: 42px;
+    display: block;
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    color: $blue;
+    border: 1px solid #eaeaea;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+}
+//热门业务
+.hot-business{
+  text-align: center;
+  overflow: hidden;
+  padding: 25px 0 0;
+  .img-box {
+    width: 1230px;
+    padding-top: 25px;
+    li {
+      float: left;
+      margin-right: 26px;
+      position: relative;
+      span{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(81, 92, 111, 0.7);
+        color: #fff;
+        padding: 5px 15px;
+      }
+      p{
+        padding: 10px 0 0;
+      }
+    }
+    img {
+      display: block;
+      width: 280px;
+      height: 200px;
+    }
+  }
+}
